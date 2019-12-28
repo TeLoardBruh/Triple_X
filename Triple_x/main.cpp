@@ -15,11 +15,24 @@ int main(int argc, const char *argv[])
     cout << "You are a secret agent breaking into a scure server room!\n";
     cout << "ENTER THE CORRECT CODE TO CONTINUE!\n";
 
-    int a = 4;
-    int b = 4;
-    int c = 4;
+    const int CodeA = 2;
+    const int CodeB = 3;
+    const int CodeC = 4;
 
-    int sum = a * b *c ;
-    cout << "This is " << sum ;
+    const int CodeSum = CodeA + CodeB + CodeC ;
+    const int CodeProduct = CodeA * CodeB * CodeC ;
+    cout << "\n" << "\n";
+    cout << "There are 3 number in the code \n";
+    cout << "This is codes this add-up to : " << CodeSum << "\n";
+    cout << "This is codes this mutiply to : " << CodeProduct << "\n";
+
+
+
+    int PlayerGuess;
+    cin >> PlayerGuess ;
+    if (PlayerGuess == CodeA && PlayerGuess && CodeB && PlayerGuess && CodeC){
+        cout << "Well son of the bitch you are in \n";
+    }
+    cout << "You entered : " << PlayerGuess ;
     return 0;
 }
